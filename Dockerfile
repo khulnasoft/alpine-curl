@@ -3,6 +3,6 @@
 # BUILDPLATFORM is an automatic platform ARG enabled by Docker BuildKit.
 # Represents the platform where the build is happening, do not mix with
 # TARGETARCH
-FROM docker.io/library/alpine:3.18.4
+FROM docker.io/library/alpine:3.19.0
 RUN apk add --no-cache curl iputils bind-tools tcpdump
 ENTRYPOINT ["/usr/bin/curl"]
